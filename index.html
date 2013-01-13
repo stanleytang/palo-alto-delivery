@@ -9,13 +9,13 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- End Bootstrap -->
     
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" media="screen">
     
   </head>
   
   <body>
-    <!-- Header -->   
+    <!-- Header -->
     <div id="header" class="container">
       <div class="row">   
         <!-- Logo -->       
@@ -42,40 +42,97 @@
           </h1>
           <br />
           <h2>
-            Just $5 per delivery. <br />No minimum order size.
+            Just $5 per delivery. No minimum order size.
           </h2>
         </center>
-      </div>
+      </div>   
     </div>
     <!-- End Hero -->
     
     <!-- Content -->
     <div id="content" class="container">  
-      <!-- Restaurants -->
-      <div id="restaurants">
-        <h1><center>First, Pick A Restaurant</center></h1>
-         <script src="js/restaurants.js"></script>
-      </div>
-      <!-- End Restaurants -->
-    
+      
+      <!-- <div class="row"> -->
+        <!-- How it works -->
+        <div id="how-it-works">
+          <div class="header">
+            <h2>How It Works</h2>
+          </div>
+        
+          <div id="steps" class="row">
+            <div class="span3">
+              <h4><span class="number">1</span> Pick your food</h4>
+              Choose from a wide range of dishes in Palo Alto
+            </div>
+            
+            <div class="span3">
+              <h4><span class="number">2</span> Call us to order</h4>
+              Then give us a call to place your order with us
+            </div>
+          
+            <div class="span3">
+              <h4><span class="number">3</span> We deliver the food!</h4>
+              Fast delivery guaranteed. 
+            </div>  
+          </div>    
+        
+          <div class="call">
+            <h3>Call To Order: (650) 681-9470</h3>
+          </div> 
+        </div>
+        <!-- End how it works -->
+      
+        <!-- Restaurants -->
+        <div id="restaurants">
+          <h2><center>Pick Your Restaurant</center></h2>
+          <script src="js/restaurants.js"></script>
+        </div>
+        <!-- End Restaurants -->            
+      <!-- </div> -->
+
       <hr class="soften" />
     
       <!-- Call Us -->
       <div id="call-us">
         <center>
-          <h1>Then, Call Us To Order</h1>
-          <h2>(650) 681-9470</h2>
+          <h2>Call Us To Order</h2>
+          <h3>(650) 681-9470</h3>
           <br />
-
         </center>
       </div>
-      
       <div class="alert alert-info" id="delivery-info">
         <h4>Delivery Hours</h4>
         <p>Lunch | Wed, Fri-Sun | 11am - 1pm</p>
         <p>Dinner | Tue-Sun | 6pm - 9pm</p>
       </div>
       <!-- End Call Us -->
+      
+      <hr class="soften" />
+    
+     <!-- Featured -->
+      <div id="featured">
+        <h2><center>What Others Are Saying</center></h2>
+        <p class="muted">Featured in</p>
+        <img src="img/media/nbc.png" />
+        <img src="img/media/sanjose.png" />
+        <img src="img/media/SF_Gate_logo2.gif" />
+        <img src="img/media/weekly_logo.gif" />
+      </div>
+      <br />
+      <div class="row">
+        <div class="span4">
+          <p>"Indispensable" - Palo Alto Weekly</p>
+          <p>"Makes life so much easier" - Sarah, Menlo Park</p>
+        </div>
+        <div class="span4">
+          <p>"Awesome service" - Brad, Stanford</p>
+          <p>"I'm so happy I can now order delivery in my area" - Aubrey, Palo Alto</p>
+        </div>
+        <div class="span4">
+          <p>"Better than making dinner for my kids" - Kim, Atherton</p>
+        </div>
+      </div>
+      <!-- End Featured -->
       
     </div>
     <!-- End Content -->
@@ -86,5 +143,18 @@
     </div>
     <!-- End Footer -->
     
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36201829-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>

@@ -53,10 +53,10 @@ function genRestaurantsData() {
   var restaurant = {"name": "Garden Fresh", "image": "garden_fresh.jpg", "menu": "garden_fresh.pdf"};
   restaurantsData.push(restaurant);
   
-  var restaurant = {"name": "Howie Artisan Pizza", "image": "Howie Artisan Pizza.png", "menu": "Howie Artisan Pizza Takeaway Menu.pdf"};
+  var restaurant = {"name": "Howie's Artisan Pizza", "image": "Howie Artisan Pizza.png", "menu": "Howie Artisan Pizza Takeaway Menu.pdf"};
   restaurantsData.push(restaurant);
   
-  var restaurant = {"name": "Hunan Garden", "image": "hunan_garden.png", "menu": "hunan_garden.pdf"};
+  var restaurant = {"name": "Taipan", "image": "taipan.png", "menu": "taipan.pdf"};
   restaurantsData.push(restaurant);
   
   var restaurant = {"name": "Kanpai Sushi", "image": "kanpai.gif", "menu": "kanpai_sushi.pdf"};
