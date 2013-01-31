@@ -1,22 +1,39 @@
-#header-phone-number {
-  padding-top: 10px;
+#header {
+  padding: 7px 0px;
 }
 
 /* Cover */
 
 #cover h1, #cover h2 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  margin: 0px;
 }
 
 #cover {
-  height: 300px;
-  background-image: url(../img/bckgrnd_hp5.jpg);
-  background-position: 50% 80%;
+  height: 370px;
+  background-image: url(../img/background.png);
+  background-position: 50% 45%;
   -webkit-border-radius: 0px;
   -moz-border-raidus: 0px;
   border-radius: 0px;
   color: white;
+}
+
+#cover h1 {
+  padding-bottom: 50px;
+  font-size: 57px;
+}
+
+#cover h2 {
+  line-height: inherit;
+  font-size: 35px;
+}
+
+#cover h3 {
+  line-height: inherit;
+  font-weight: 300;
+  color: #e4e4e4;
 }
 
 /* How it works */
@@ -24,7 +41,7 @@
 #how-it-works {
   width: 700px;
   margin: auto;
-  margin-top: -120px;  
+  margin-top: -180px;  
   margin-bottom: 50px;
   
   background-color: #f5f5f5;
@@ -55,10 +72,22 @@
   background-color: #d14600;
   color: white;
   padding: 2px 8px;
+  margin-right: 5px;
 }
 
 #how-it-works .call {
   text-align: center;
+}
+
+.phone {
+  color: #d14600;
+}
+
+#how-it-works img {
+  height: 70px;
+  display: block;
+  margin-left: 50px;
+  padding: 9px 0px;
 }
 
 /* Content */
@@ -86,7 +115,7 @@
 }
 
 #restaurants {
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 #call-us h2 {
@@ -100,13 +129,10 @@
 #delivery-info {
   padding-left: 15px;
   padding-right: 15px;
-  width: 250px;
+  padding-bottom: 0px;
+  width: 300px;
   margin: auto;
   text-align: center;
-}
-
-#delivery-info h4 {
-  padding-bottom: 10px;
 }
 
 #featured img {

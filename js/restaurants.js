@@ -3,6 +3,8 @@ genRestaurants();
 function genRestaurants() {
   var restaurantsData = genRestaurantsData();
   
+  var numOfColumns = 4;
+  
   var html = "";
   
   for (var i = 0; i < restaurantsData.length; i++) {
@@ -11,7 +13,7 @@ function genRestaurants() {
     var menuLink = "menus/" + restaurant.menu;
     var imageLink = "img/logos/" + restaurant.image;
     
-    if (i % 4 == 0) {
+    if (i % numOfColumns == 0) {
       html += '<div class="row">';
     }
     
@@ -27,7 +29,7 @@ function genRestaurants() {
       '</div>' +
     '</div>';
     
-    if (i % 4 == 3) {
+    if (i % numOfColumns == numOfColumns - 1) {
       html += '</div>';
       if (i + 1 != restaurantsData.length) {
         html += '<br />';
@@ -41,6 +43,9 @@ function genRestaurants() {
 function genRestaurantsData() {
   var restaurantsData = new Array();
   
+  var restaurant = {"name": "Cafe 220", "image": "cafe.png", "menu": "cafe220.pdf"};
+  restaurantsData.push(restaurant);
+  
   var restaurant = {"name": "Bangkok Cuisine", "image": "Bangkok Cuisine.png", "menu": "Bangkok Cuisine.pdf"};
   restaurantsData.push(restaurant);
   
@@ -50,7 +55,7 @@ function genRestaurantsData() {
   var restaurant = {"name": "Darbar", "image": "Darbar.png", "menu": "Darbar Menu.pdf"};
   restaurantsData.push(restaurant);
   
-  var restaurant = {"name": "Garden Fresh", "image": "garden_fresh.jpg", "menu": "garden_fresh.pdf"};
+  var restaurant = {"name": "LYFE Kitchen", "image": "lyfe.jpg", "menu": "lyfe.pdf"};
   restaurantsData.push(restaurant);
   
   var restaurant = {"name": "Howie's Artisan Pizza", "image": "Howie Artisan Pizza.png", "menu": "Howie Artisan Pizza Takeaway Menu.pdf"};
@@ -72,9 +77,6 @@ function genRestaurantsData() {
   restaurantsData.push(restaurant);
   
   var restaurant = {"name": "Tamarine", "image": "Tamarine.png", "menu": "Tamarine Menu.pdf"};
-  restaurantsData.push(restaurant);
-  
-  var restaurant = {"name": "Village Cheese House", "image": "village_cheese_house.png", "menu": "village_cheese_house.pdf"};
   restaurantsData.push(restaurant);
   
   return restaurantsData;
