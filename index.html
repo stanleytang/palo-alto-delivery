@@ -4,18 +4,30 @@
     <title>Palo Alto Food Delivery</title>
     
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- End Bootstrap -->
     
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" media="screen">
-    <link rel="image_src" href="http://www.paloaltodelivery.com/img/logo-fb.png" />
-    <meta property="og:image" content="http://www.paloaltodelivery.com/img/logo-fb.png"/> 
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' 
+      rel='stylesheet' type='text/css'>
+    <!-- End Google Font -->
     
-    <meta name="description" content="Palo Alto now delivers. Get dinner or lunch delivered right to your door with one easy call">
-    <meta name="keywords" content="food, delivery, palo alto, menlo park, atherton, stanford, dinner, lunch, takeout, restaurants">
+    <!-- CSS -->
+    <link href="css/base.css" rel="stylesheet" media="screen">
+    <link href="css/home.css" rel="stylesheet" media="screen">
+    <!-- End CSS -->
+    
+    <!-- Meta -->
+    <link rel="image_src" href="http://www.paloaltodelivery.com/img/logo-fb.png" />
+    <meta property="og:image" 
+      content="http://www.paloaltodelivery.com/img/logo-fb.png"/> 
+    <meta name="description" content="Palo Alto now delivers. Get dinner or lunch 
+      delivered right to your door with one easy call">
+    <meta name="keywords" content="food, delivery, palo alto, menlo park, atherton, 
+      stanford, dinner, lunch, takeout, restaurants">
+    <!-- End Meta -->
     
   </head>
   
@@ -24,80 +36,96 @@
     <div id="header" class="container">
       <div class="row">   
         <!-- Logo -->       
-        <div id="header-logo" class="span4">
-          <img src="img/logo.png" style="height: 45px"/>
+        <div id="header-logo-wrapper" class="span4">
+          <a href="http://www.paloaltodelivery.com">
+            <img id="header-logo" src="img/logo.png"/>
+          </a>
         </div>
         <!-- End Logo -->
         
         <!-- Phone Number -->
-        <div id="header-phone-number" class="menu pull-right">
-          <h4>Call Us: <span class="phone">(650) 681-9470</span></h4>
+        <div id="header-call-us-wrapper" class="menu pull-right">
+          <p id="header-call-us">
+            Call Us: <span class="highlight-phone-number">(650) 681-9470</span>
+          </p>
         </div>
-        <!-- End Phone Number -->
+        <!-- End Phone Number -->    
       </div>
     </div>
     <!-- End Header -->
     
     <!-- Cover -->
-    <div id="cover" class="hero-unit">
+    <div id="cover" class="hero-unit squarify">
       <div class="container">
-        <center>
-          <h1>Your favorite Palo Alto restaurants delivered to you</h1>
-          <h2>Just $6 per delivery</h2>
-          <h3>No minimum order size. Tip included.</h3>
-        </center>
+        <h1 class="cover-header header-font">
+          Your favorite Palo Alto restaurants delivered to you
+        </h1>
+        <h2 class="cover-content header-font">Just $6 per delivery</h2>
+        <h3 class="cover-subcontent">No minimum order size. Tip included.</h3>
       </div>   
     </div>
-    <!-- End Hero -->
+    <!-- End Cover -->
+   
+    <!-- How It Works -->
+    <div id="how-it-works" class="roundify">
+      <h2 class="how-it-works-header">How It Works</h2>
+      
+      <div class="row">
+        <!-- Step 1 -->
+        <div class="span3">
+          <p class="how-it-works-step-title">
+            <span class="how-it-works-step-number">1</span> Pick your food
+          </p>
+          <img class="how-it-works-step-icon" src="img/menuicon.gif" />
+          Choose from a <a href="/#menu">wide range of dishes</a> in Palo Alto    
+        </div>
+        <!-- End Step 1 -->
+        
+        <!-- Step 2 -->
+        <div class="span3">
+          <p class="how-it-works-step-title">
+            <span class="how-it-works-step-number">2</span> Call us to order
+          </p>
+          <img class="how-it-works-step-icon" src="img/phone.png" />
+          Then give us a <a href="/#call">call to place your order</a> with us     
+        </div>
+        <!-- End Step 2 -->
+        
+        <!-- Step 3 -->
+        <div class="span3">
+          <p class="how-it-works-step-title">
+            <span class="how-it-works-step-number">3</span> We deliver the food!
+          </p>
+          <img class="how-it-works-step-icon" src="img/concierge-icon.png" />
+          Pay by credit card upon delivery
+        </div> 
+        <!-- End Step 3 --> 
+      </div>    
+      
+      <p class="how-it-works-call-us">
+        Call To Order: <span class="highlight-phone-number">(650) 681-9470</span>
+      </p>
+      <p class="center-text">
+        <a href="#order-form" role="button" data-toggle="modal">
+          Alternatively, click here if you want to order online via a form
+        </a>
+      </p>
+    </div>
+    <!-- End How It Works -->
     
     <!-- Content -->
     <div id="content" class="container">  
-    
-      <!-- How it works -->
-      <div id="how-it-works">
-        <div class="header">
-          <h2>How It Works</h2>
-        </div>
-        
-        <div id="steps" class="row">
-          <div class="span3">
-            <h4><span class="number">1</span> Pick your food</h4>
-            <img src="img/menuicon.gif" />
-            Choose from a <a href="/#menu">wide range of dishes</a> in Palo Alto    
-          </div>
-            
-          <div class="span3">
-            <h4><span class="number">2</span> Call us to order</h4>
-            <img src="img/phone.png" />
-            Then give us a <a href="/#call">call to place your order</a> with us     
-          </div>
-          
-          <div class="span3">
-            <h4><span class="number">3</span> We deliver the food!</h4>
-            <img src="img/concierge-icon.png" />
-            Pay by credit card upon delivery
-          </div>  
-        </div>    
-        
-        <div class="call">
-          <h3>Call To Order: <span class="phone">(650) 681-9470</span></h3>
-          <p><a href="#myModal" role="button" data-toggle="modal">
-            Alternatively, click here if you want to order online via a form
-          </a></p>
-        </div> 
-      </div>
-      <!-- End how it works -->
-      
       <!-- Restaurants -->
+      <a name="menu"></a> 
       <div id="restaurants">
-        <a name="menu"></a> 
-        <h2><center>Pick Your Restaurant</center></h2>
-        <script src="js/restaurants.js"></script>
-        <br />
-        <br />
-        <center>
-          Want to see a different restaurant here? <a href="mailto:support@paloaltodelivery.com">Email us</a>
-        </center>
+        <h2 class="content-header">Pick Your Restaurant</h2>
+        <div id="restaurants-list">
+          <script src="js/restaurants-list.js"></script>
+        </div>
+        <p class="center-text">
+          Want to see a different restaurant here? <a 
+            href="mailto:support@paloaltodelivery.com">Email us</a>
+        </p>
       </div>
       <!-- End Restaurants -->            
 
@@ -106,112 +134,14 @@
       <!-- Call Us -->
       <a name="call"></a> 
       <div id="call-us">
-        <center>
-          <h2>Call Us To Order</h2>
-          <h3>(650) 681-9470</h3>
-          <br />
-          <p><a href="#myModal" role="button" data-toggle="modal">
+        <h2 class="content-header">Call Us To Order</h2>
+        <p class="call-us-phone-number">(650) 681-9470</p>
+        <p class="center-text">
+          <a href="#order-form" role="button" data-toggle="modal">
             Alternatively, click here if you want to order online via a form
-          </a></p>
-          <br />
-        </center>
+          </a>
+        </p>
       </div>
-                    
-      <!-- Modal -->
-      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-          <h3 id="myModalLabel">Online Order Form</h3>
-        </div>
-    
-        <div class="modal-body">
-          <form method="post" action="send_mail.php" id="contactform">
-            <fieldset>
-          		<p>Place your order with us online by filling out this form. We will email you back once your order has been confirmed with the restaurant. Please note, <b>we only deliver dinners from 5-8pm.</b></p>
-
-        		  <div class="clearfix">
-        				<label for="name">
-        					Full name
-        				</label>
-        				<div class="input">
-        					<input type="text" name="contactname" id="contactname" value="" class="span5 required" role="input" aria-required="true" />
-        				</div>
-        			</div>
-
-        			<div class="clearfix">
-    						<label for="phone">
-    							Phone number
-    						</label>
-    						<div class="input">
-    							<input type="text" name="phone" id="phone" value="" class="span5 required" role="input" aria-required="true" />
-    						</div>
-    					</div>
-
-    					<div class="clearfix">
-    						<label for="email">
-    							Email address
-    						</label>
-    						<div class="input">
-    							<input type="text" name="email" id="email" value="" class="span5 required email" role="input" aria-required="true" />
-    						</div>
-    					</div>
-    					
-    					<div class="clearfix">
-    						<label for="address">
-    							Physical address (If Stanford, also enter dorm/building)
-    						</label>
-    						<div class="input">
-    							<input type="text" name="address" id="address" value="" class="span5 required address" role="input" aria-required="true" />
-    						</div>
-    					</div>
-
-    					<div class="clearfix">
-    						<label for="delivery">
-    							Desired delivery time (or ASAP - please allow 45 mins)
-    						</label>
-    						<div class="input">
-    							<input type="text" name="delivery" id="delivery" value="" class="span5 required delivery" role="input" aria-required="true" />
-    						</div>
-    					</div>
-
-    					<div class="clearfix">
-    						<label for="restaurant">
-    							Restaurant
-    						</label>
-    						<div class="input">
-    							<select name="restaurant" id="restaurant" class="span5 required" role="select" aria-required="true">
-    								<option>Cafe 220</option>
-    								<option>Bangkok Cuisine</option>
-    								<option>Crepevine</option>
-    								<option>Darbar</option>
-    								<option>Howie's Artisan Pizza</option>
-    								<option>LYFE Kitchen</option>
-    								<option>Kanpai Sushi</option>
-    								<option>Oren's Hummus</option>
-    								<option>Patxi's Pizza'</option>
-    								<option>Sprout Cafe</option>
-    								<option>Taipan</option>
-    								<option>Tamarine</option>
-    							</select>
-    						</div>
-    					</div>
-
-    					<div class="clearfix">
-    						<label for="message">Order information
-    						<div class="input">
-    							<textarea rows="8" name="message" id="message" class="span5 required" role="textbox" aria-required="true"></textarea>
-    						</div>
-    					</div>
-    					<div class="actions">
-    						<button type="submit" value="Get my food!" name="submit" id="submitButton" class="btn btn-primary" title="Get my food!">
-    						  Complete Order
-    						</button>
-    					</div>
-        		</fieldset>
-        	</form>
-        </div>
-      </div>
-      <!-- End Modal -->
 
       <div class="alert alert-info" id="delivery-info">
         <p>We serve dinner daily from 5pm - 8pm</p>
@@ -222,12 +152,12 @@
     
      <!-- Featured -->
       <div id="featured">
-        <h2><center>What Others Are Saying</center></h2>
+        <h2 class="content-header">What Others Are Saying</h2>
         <p class="muted">Featured in</p>
-        <img src="img/media/nbc.png" />
-        <img src="img/media/sanjose.png" />
-        <img src="img/media/SF_Gate_logo2.gif" />
-        <img src="img/media/weekly_logo.gif" />
+        <img class="featured-logo" src="img/media/nbc.png" />
+        <img class="featured-logo" src="img/media/sanjose.png" />
+        <img class="featured-logo" src="img/media/SF_Gate_logo2.gif" />
+        <img class="featured-logo" src="img/media/weekly_logo.gif" />
       </div>
       <br />
       <div class="row">
@@ -250,9 +180,121 @@
     
     <!-- Footer -->
     <div id="footer" class="muted">
-      <p>Questions or Comments? Email <a href="mailto:support@paloaltodelivery.com">support@paloaltodelivery.com</a></p>
+      <p class="footer-text">
+        Questions or Comments? Vist our <a href="/faq.html">FAQ page</a> or email 
+          <a href="mailto:support@paloaltodelivery.com">support@paloaltodelivery.com</a>
+      </p>
     </div>
     <!-- End Footer -->
+    
+    <!-- Order Form Modal -->
+    <div id="order-form" class="modal hide fade" tabindex="-1" role="dialog" 
+      aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel">Online Order Form</h3>
+      </div>
+  
+      <div class="modal-body">
+        <form method="post" action="send_mail.php" id="contactform">
+          <fieldset>
+        		<p>
+        		  Place your order with us online by filling out this form. We will email you 
+        		    back once your order has been confirmed with the restaurant. Please note, 
+        		    <b>we only deliver dinners from 5-8pm.</b>
+        		</p>
+
+      		  <div class="clearfix">
+      				<label for="name">
+      					Full name
+      				</label>
+      				<div class="input">
+      				  <input type="text" name="contactname" id="contactname" value="" 
+      				    class="span5 required" role="input" aria-required="true" />
+      				</div>
+      			</div>
+
+      			<div class="clearfix">
+  						<label for="phone">
+  							Phone number
+  						</label>
+  						<div class="input">
+  							<input type="text" name="phone" id="phone" value="" class="span5 required" 
+  							 role="input" aria-required="true" />
+  						</div>
+  					</div>
+
+  					<div class="clearfix">
+  						<label for="email">
+  							Email address
+  						</label>
+  						<div class="input">
+  							<input type="text" name="email" id="email" value="" 
+  							 class="span5 required email" role="input" aria-required="true" />
+  						</div>
+  					</div>
+  					
+  					<div class="clearfix">
+  						<label for="address">
+  							Physical address (If Stanford, also enter dorm/building)
+  						</label>
+  						<div class="input">
+  							<input type="text" name="address" id="address" value="" 
+  							 class="span5 required address" role="input" aria-required="true" />
+  						</div>
+  					</div>
+
+  					<div class="clearfix">
+  						<label for="delivery">
+  							Desired delivery time (or ASAP - please allow 45 mins)
+  						</label>
+  						<div class="input">
+  							<input type="text" name="delivery" id="delivery" value="" 
+  							 class="span5 required delivery" role="input" aria-required="true" />
+  						</div>
+  					</div>
+
+  					<div class="clearfix">
+  						<label for="restaurant">
+  							Restaurant
+  						</label>
+  						<div class="input">
+  							<select name="restaurant" id="restaurant" class="span5 required" 
+    						  role="select" aria-required="true">
+      						<option>Cafe 220</option>
+  								<option>Bangkok Cuisine</option>
+  								<option>Crepevine</option>
+  								<option>Darbar</option>
+  								<option>Howie's Artisan Pizza</option>
+  								<option>LYFE Kitchen</option>
+  								<option>Kanpai Sushi</option>
+  								<option>Oren's Hummus</option>
+  								<option>Patxi's Pizza'</option>
+  								<option>Sprout Cafe</option>
+  								<option>Taipan</option>
+  								<option>Tamarine</option>
+  							</select>
+  						</div>
+  					</div>
+
+  					<div class="clearfix">
+  						<label for="message">Order information
+  						<div class="input">
+  							<textarea rows="8" name="message" id="message" class="span5 required" 
+    							role="textbox" aria-required="true"></textarea>
+  						</div>
+  					</div>
+  					<div class="actions">
+  						<button type="submit" value="Get my food!" name="submit" id="submitButton" 
+  						  class="btn btn-primary" title="Get my food!">
+  						  Complete Order
+  						</button>
+  					</div>
+      		</fieldset>
+      	</form>
+      </div>
+    </div>
+    <!-- End Order Form Modal -->
     
     <script type="text/javascript">
 
@@ -261,9 +303,13 @@
       _gaq.push(['_trackPageview']);
 
       (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; 
+        ga.async = true;
+        ga.src = 
+          ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + 
+          '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(ga, s);
       })();
 
     </script>

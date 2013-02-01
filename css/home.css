@@ -1,0 +1,148 @@
+/* Cover */
+
+#cover {
+  background-image: url(../img/background.png);
+  background-position: 50% 45%;
+  height: 390px;
+  padding: 50px;
+  text-align: center;
+}
+
+#cover .cover-header {
+  color: white;
+  font-size: 58px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+#cover .cover-content {
+  color: white;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+#cover .cover-subcontent {
+  color: #d0c9c9;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+/* How It Works */
+
+#how-it-works {
+  width: 700px;
+  margin: auto;
+  
+  /* TODO - Consider breaking layout into separate class, or in wrapper */
+  margin-top: -180px;  
+  margin-bottom: 40px;
+  
+  background-color: #f5f5f5;
+  border: 1px solid #dadada;
+  
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+  
+  padding: 5px 25px;
+}
+
+.how-it-works-header {
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.how-it-works-step-title {
+  font-size: 17px;
+}
+
+.how-it-works-step-number {
+  background-color: #d14600;
+  color: white;
+  margin-right: 5px;
+  padding: 2px 8px;
+}
+
+.how-it-works-step-icon {
+  height: 70px;
+  display: block;
+  margin-left: 50px;
+  padding: 9px 0px;
+}
+
+.how-it-works-call-us {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+/* Content */
+
+#content {
+  padding-bottom: 50px;
+}
+
+.content-header {
+  text-align: center;
+}
+
+#content .soften {
+  margin: 30px 0px;
+}
+
+/* Restaurant List */
+
+#restaurants-list {
+  padding-bottom: 30px;
+}
+
+#restaurants .content-header {
+  padding-bottom: 28px;
+}
+
+.restaurants-list-image {
+  height: 50px;
+  width: 50px;
+}
+
+.restaurants-list-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Call Us */
+
+#call-us .content-header {
+  padding-bottom: 15px;
+}
+
+.call-us-phone-number {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#delivery-info {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+  
+  /* TODO - again, think about decoupling layout with styling */
+}
+
+/* Featured */
+
+.featured-logo {
+  height: 50px;
+  padding-right: 75px;
+  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}

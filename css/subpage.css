@@ -1,0 +1,22 @@
+#page-heading-wrapper {
+  background-image: url(../img/background.png);
+  background-position: 50% 45%;
+  margin: 0;
+  padding: 10px;
+}
+
+#page-heading {
+  color: white;
+}
+
+#faq {
+  padding-top: 20px;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-back-to-top {
+  text-align: right;
+}
